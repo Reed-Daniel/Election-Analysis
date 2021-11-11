@@ -3,7 +3,7 @@ import csv
 import os
 
 # assign a variable for the file to LOAD and the path
-file_to_load = 'election_results.csv'
+file_to_load = os.path.join('Resources','election_results.csv')
 
 # assign a variable to SAVE the file to a path
 file_to_save = os.path.join('Analysis','election_analysis.txt')
@@ -95,7 +95,6 @@ with open(file_to_save, 'w') as txt_file:
     
     #save the winning candidate's results to txt file
     txt_file.write(winning_candidate_summary)
-
 
 
         
